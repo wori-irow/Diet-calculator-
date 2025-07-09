@@ -1,21 +1,22 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>단백질 계산기</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>단백질 섭취 계산기</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>단백질 계산기</h1>
-    <input type="number" id="weightInput" placeholder="체중 (kg)을 입력하세요" />
-    <br/>
+    <h1>🌸 단백질 섭취 계산기</h1>
+    <p>체중(kg)을 입력하세요:</p>
+    <input type="number" id="weightInput" placeholder="예: 70" />
     <button onclick="calculateProtein()">계산하기</button>
-    <div class="result" id="result"></div>
+    <div id="resultBox" class="hidden">
+      <p>💪 하루 권장 단백질 섭취량:</p>
+      <p><span id="proteinRange"></span></p>
+    </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
